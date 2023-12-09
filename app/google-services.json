@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "97572397086",
+    "project_id": "funbook-52ba4",
+    "storage_bucket": "funbook-52ba4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97572397086:android:50dc95871c0cd4a21bce0f",
+        "android_client_info": {
+          "package_name": "com.kingtech.funbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_J7nL-q0yGkqEdAfTKYFMuZaDp-qjYuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
