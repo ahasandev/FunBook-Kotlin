@@ -1,9 +1,10 @@
-package com.kingtech.funbook
+package com.kingtech.funbook.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.kingtech.funbook.model.PostWithUser
 import com.kingtech.funbook.databinding.ItemPostBinding
 
 class PostAdapter(val postList: List<PostWithUser>) : RecyclerView.Adapter<PostAdapter.PostVH>() {

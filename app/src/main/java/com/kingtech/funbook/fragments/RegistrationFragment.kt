@@ -1,14 +1,11 @@
-package com.kingtech.funbook
+package com.kingtech.funbook.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.kingtech.funbook.databinding.FragmentRegistrationBinding
+import com.kingtech.funbook.model.User
 
 
 class RegistrationFragment : BaseFragment<FragmentRegistrationBinding>(FragmentRegistrationBinding::inflate){

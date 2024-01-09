@@ -1,4 +1,4 @@
-package com.kingtech.funbook
+package com.kingtech.funbook.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.kingtech.funbook.databinding.FragmentHomeBinding
 
-class HomeFragment :BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
+class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -27,7 +27,7 @@ class HomeFragment :BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infla
         override fun getItem(position: Int): Fragment {
             return when (position) {
                 0 -> PostFragment()
-                1 -> UserFragment()
+                1 -> MemesFragment()
                 2 -> PostFragment()
                 3 -> PostFragment()
                 else -> throw IllegalArgumentException("Invalid position: $position")

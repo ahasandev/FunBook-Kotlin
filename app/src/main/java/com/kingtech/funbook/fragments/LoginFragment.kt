@@ -1,4 +1,4 @@
-package com.kingtech.funbook
+package com.kingtech.funbook.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
+import com.kingtech.funbook.R
 import com.kingtech.funbook.databinding.FragmentLoginBinding
 
 

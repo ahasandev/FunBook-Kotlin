@@ -1,4 +1,4 @@
-package com.kingtech.funbook
+package com.kingtech.funbook.model
 
 data class Post(
     val authorId: String= "",

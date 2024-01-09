@@ -1,4 +1,4 @@
-package com.kingtech.funbook
+package com.kingtech.funbook.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.kingtech.funbook.model.User
 import com.kingtech.funbook.databinding.UserListBinding
 
 class UserAdapter(var userlist :List<User>, private val context: Context) : RecyclerView.Adapter<UserAdapter.Userviewholder>() {
