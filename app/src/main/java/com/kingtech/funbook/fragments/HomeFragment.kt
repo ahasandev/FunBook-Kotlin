@@ -30,7 +30,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 1 -> MemesFragment()
                 2 -> PostFragment()
                 3 -> PostFragment()
-                else -> throw IllegalArgumentException("Invalid position: $position")
+                else -> PostFragment()
+//                throw IllegalArgumentException("Invalid position: $position")
             }
         }
 

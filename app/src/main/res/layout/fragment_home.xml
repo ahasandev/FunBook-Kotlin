@@ -33,7 +33,7 @@
         android:id="@+id/vp_home_detail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tl_home_detail_bar"/>
+        android:layout_below="@id/tl_home_detail_bar" />
 
 
 </RelativeLayout>

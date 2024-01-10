@@ -2,6 +2,7 @@ package com.kingtech.funbook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.exoplayer2.ExoPlayer
 import com.kingtech.funbook.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,4 +16,5 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
+
 }
