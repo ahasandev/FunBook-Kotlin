@@ -13,9 +13,9 @@ class RegistrationFragment : BaseFragment<FragmentRegistrationBinding>(FragmentR
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.registrationBtn.setOnClickListener {
-            var name = binding.editTextUsername.text.toString().trim()
-            var email = binding.editTextEmail.text.toString().trim()
-            var password = binding.editTextNewPassword.text.toString().trim()
+            val name = binding.editTextUsername.text.toString().trim()
+            val email = binding.editTextEmail.text.toString().trim()
+            val password = binding.editTextNewPassword.text.toString().trim()
 
             userRegistration(name, email, password)
         }
@@ -40,7 +40,7 @@ class RegistrationFragment : BaseFragment<FragmentRegistrationBinding>(FragmentR
                     mAuth.signOut()
                     findNavController().popBackStack()
                 }.addOnFailureListener {
-                    var alertDialog = AlertDialog.Builder(requireActivity()).setTitle("Error")
+                    val alertDialog = AlertDialog.Builder(requireActivity()).setTitle("Error")
                         .setMessage(it.message)
 
                     alertDialog.create().show()
@@ -50,7 +50,7 @@ class RegistrationFragment : BaseFragment<FragmentRegistrationBinding>(FragmentR
 
 
             }.addOnFailureListener { error ->
-                var alertDialog = AlertDialog.Builder(requireActivity()).setTitle("Error")
+                val alertDialog = AlertDialog.Builder(requireActivity()).setTitle("Error")
                     .setMessage(error.message)
 
                 alertDialog.create().show()

@@ -29,7 +29,6 @@ class PostFragment : BaseFragment<FragmentPostBinding>(FragmentPostBinding::infl
 
             addPostBottomSheetDialog()
 
-
         }
 
 
@@ -40,7 +39,6 @@ class PostFragment : BaseFragment<FragmentPostBinding>(FragmentPostBinding::infl
     private fun setData() {
         mRef.child("Post").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                postList.clear()
 
                 for (sn in snapshot.children) {
                     val post = sn.getValue(Post::class.java)
@@ -52,7 +50,7 @@ class PostFragment : BaseFragment<FragmentPostBinding>(FragmentPostBinding::infl
                 adapter = PostAdapter(postList)
 
                 val manager = LinearLayoutManager(requireContext())
-                // manager.stackFromEnd= true
+//                 manager.stackFromEnd= true
 
 
                 binding.rcvpost.layoutManager = manager

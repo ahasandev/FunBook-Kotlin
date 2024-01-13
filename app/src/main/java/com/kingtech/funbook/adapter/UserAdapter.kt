@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.kingtech.funbook.model.User
 import com.kingtech.funbook.databinding.UserListBinding
 
@@ -29,6 +30,7 @@ class UserAdapter(var userlist :List<User>, private val context: Context) : Recy
         holder.binding.username.text=user.name
         holder.binding.useremail.text=user.email
         holder.binding.userid.text=user.userId
+        holder.binding.UserImage.load(user.profileImage)
         holder.itemView.setOnClickListener {
             Toast.makeText(context,"Cliked",Toast.LENGTH_SHORT).show()
 

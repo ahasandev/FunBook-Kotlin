@@ -22,13 +22,13 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
 
     class HomePagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
-        private val tabTitles = arrayOf("Home", "Friends","Post","Profile")
+        private val tabTitles = arrayOf("Home", "Friends","Memes","Profile")
 
         override fun getItem(position: Int): Fragment {
             return when (position) {
                 0 -> PostFragment()
-                1 -> MemesFragment()
-                2 -> PostFragment()
+                1 -> UserFragment()
+                2 -> MemesFragment()
                 3 -> PostFragment()
                 else -> PostFragment()
 //                throw IllegalArgumentException("Invalid position: $position")
