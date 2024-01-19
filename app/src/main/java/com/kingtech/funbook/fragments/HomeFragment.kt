@@ -17,6 +17,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
 
        binding.tlHomeDetailBar.setupWithViewPager(binding.vpHomeDetail)
         binding.apply {
+
             tlHomeDetailBar.getTabAt(0)!!.setIcon(R.drawable.round_home_24)
             tlHomeDetailBar.getTabAt(1)!!.setIcon(R.drawable.baseline_diversity_1_24)
             tlHomeDetailBar.getTabAt(2)!!.setIcon(R.drawable.round_desktop_mac_24)
@@ -46,7 +47,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
         }
 
         override fun getCount(): Int {
-            return fragmentlist.size // Number of tabs
+            return tabTitles.size // Number of tabs
         }
         override fun getPageTitle(position: Int): CharSequence? {
             return tabTitles[position]

@@ -63,4 +63,9 @@
         android:name="com.kingtech.funbook.fragments.MemesFragment"
         android:label="fragment_memes"
         tools:layout="@layout/fragment_memes" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.kingtech.funbook.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

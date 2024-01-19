@@ -14,9 +14,9 @@ class UserAdapter(private var userlist :List<User>, private val context: Context
 
     class Userviewholder(var binding: UserListBinding) : RecyclerView.ViewHolder(binding.root)
 
-    @SuppressLint("SuspiciousIndentation")
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Userviewholder {
-      var binding = UserListBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+     val  binding = UserListBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return Userviewholder(binding)
     }
 

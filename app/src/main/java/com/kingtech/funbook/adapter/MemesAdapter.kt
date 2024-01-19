@@ -88,7 +88,7 @@ class MemesAdapter(val memesList : List<Memes>, var context: Context, var videoP
 
     override fun onBindViewHolder(holder: MemesViewHolder, position: Int) {
       val memes = memesList[position]
-        holder.binding.tvTitle.text=memes.title
+        holder.binding.postTitle.text=memes.title
         holder.setVideoPath(memes.video_url)
     }
 
