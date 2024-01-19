@@ -10,7 +10,7 @@ import coil.load
 import com.kingtech.funbook.model.User
 import com.kingtech.funbook.databinding.UserListBinding
 
-class UserAdapter(var userlist :List<User>, private val context: Context) : RecyclerView.Adapter<UserAdapter.Userviewholder>() {
+class UserAdapter(private var userlist :List<User>, private val context: Context) : RecyclerView.Adapter<UserAdapter.Userviewholder>() {
 
     class Userviewholder(var binding: UserListBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -27,10 +27,9 @@ class UserAdapter(var userlist :List<User>, private val context: Context) : Recy
     override fun onBindViewHolder(holder: Userviewholder, position: Int) {
        val user = userlist[position]
 
-        holder.binding.username.text=user.name
-        holder.binding.useremail.text=user.email
-        holder.binding.userid.text=user.userId
-        holder.binding.UserImage.load(user.profileImage)
+        holder.binding.userName.text=user.name
+        holder.binding.userId.text=user.userId
+        holder.binding.userImage.load(user.profileImage)
         holder.itemView.setOnClickListener {
             Toast.makeText(context,"Cliked",Toast.LENGTH_SHORT).show()
 

@@ -21,7 +21,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
             tlHomeDetailBar.getTabAt(1)!!.setIcon(R.drawable.baseline_diversity_1_24)
             tlHomeDetailBar.getTabAt(2)!!.setIcon(R.drawable.round_desktop_mac_24)
             tlHomeDetailBar.getTabAt(3)!!.setIcon(R.drawable.baseline_emoji_emotions_24)
-            tlHomeDetailBar.getTabAt(4)!!.setIcon(R.drawable.funbook_logo)
+            tlHomeDetailBar.getTabAt(4)!!.setIcon(R.drawable.round_account_circle_24)
         }
     }
 
@@ -46,7 +46,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
         }
 
         override fun getCount(): Int {
-            return tabTitles.size // Number of tabs
+            return fragmentlist.size // Number of tabs
         }
         override fun getPageTitle(position: Int): CharSequence? {
             return tabTitles[position]
