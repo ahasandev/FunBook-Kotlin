@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:resize_mode="fill"
-        app:use_controller="false"
+        app:use_controller="true"
         app:auto_show="true"
         />
 
@@ -18,16 +18,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        >
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="65dp"
+      >
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/userProfileImageView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
             android:src="@drawable/funbook_logo"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,19 +39,18 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:text="Mr Andriod"
-            app:layout_constraintBottom_toBottomOf="@id/userProfileImageView"
+            android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@id/userProfileImageView"
             app:layout_constraintTop_toTopOf="@id/userProfileImageView" />
 
         <TextView
             android:id="@+id/postTitle"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:text="@string/app_name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/userProfileImageView" />
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

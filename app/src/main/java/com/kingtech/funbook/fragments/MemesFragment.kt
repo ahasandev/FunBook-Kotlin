@@ -44,6 +44,7 @@ class MemesFragment : BaseFragment<FragmentMemesBinding>(FragmentMemesBinding::i
                 }
             }
         })
+
     }
 
     override fun onDestroyView() {
@@ -91,6 +92,7 @@ class MemesFragment : BaseFragment<FragmentMemesBinding>(FragmentMemesBinding::i
             }
         }
     }
+
 
 
 
